@@ -20,9 +20,9 @@ export default function NewTopicForm() {
     }
 
     // dispatch new topic
-    const id = uuidv4(); 
+    const topicId = uuidv4(); 
     const newTopic = {
-      id,
+      topicId,
       name,
       icon
     }; 
