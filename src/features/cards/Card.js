@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 // import selector
+import { selectCard } from "./cardsSlice";
 
-export default function Card({ id }) {
-  const card = {}; // replace this with a call to your selector to get a card by id
+export default function Card({ cardId }) {
+  const card = useSelector(selectCard(cardId)); // replace this with a call to your selector to get a card by id
+  console.log(card)
   const [flipped, setFlipped] = useState(false);
 
   return (

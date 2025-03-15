@@ -24,8 +24,8 @@ export default function Topic() {
       <h1>{topic.name}</h1>
       <ul className="quizzes-list">
         {quizzesForTopic.map((quiz) => (
-          <li className="quiz" key={quiz.id}>
-            <Link to={ROUTES.quizRoute(quiz.id)}>{quiz.name}</Link>
+          <li className="quiz" key={quiz.quizId}>
+            <Link to={ROUTES.quizRoute(quiz.quizId)}>{quiz.name}</Link>
           </li>
         ))}
       </ul>

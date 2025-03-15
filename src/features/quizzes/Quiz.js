@@ -21,7 +21,7 @@ export default function Quiz() {
       <h1>{quiz.name}</h1>
       <ul className="cards-list">
         {quiz.cardIds.map((id) => (
-          <Card key={id} id={id} />
+          <Card key={id} cardId={id} />
         ))}
       </ul>
       <Link to={ROUTES.newQuizRoute()} className="button center">
